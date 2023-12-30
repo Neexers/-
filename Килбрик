@@ -1,0 +1,10 @@
+--Код ставить в обычный скрипт от парта
+local lava = script.Parent
+local function kill (otherPart)
+ local otherParent = otherPart.Parent
+ local player = otherParent : FindFirstChild("Humanoid")
+ if player then
+  player.Health = 0
+ end
+end
+lava.Touched:Connect(kill)
