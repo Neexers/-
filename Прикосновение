@@ -1,0 +1,4 @@
+script.Parent.Touched:Connect(function()
+
+end)
+--ставить в скрипт парта
