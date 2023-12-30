@@ -1,0 +1,5 @@
+--Код ставить в стандарттный скрипт парта с клик детектором
+function ugh ()
+	print("lol")
+end
+game.Workspace.butt.ClickDetector.MouseClick:Connect(ugh)
