@@ -1,0 +1,19 @@
+local numb = 0
+
+function sus()
+	numb = numb + 10
+end
+
+-- Connect the function to a MouseClick event
+game.Workspace.coin.ClickDetector.MouseClick:Connect(sus)
+
+-- Use a function to update the Text property
+function updateText()
+	script.Parent.Text = numb
+end
+
+-- Use a loop to periodically update the text (this is just an example, consider using events instead)
+while true do
+	updateText()
+	wait(1)
+end
